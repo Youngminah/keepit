@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+ 
+  <head> 
+    <title>KeepIt</title>
+    <link href="../css/popup.css" rel= "stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <div class="keepit-wrapper">
+      <div>
+        <button id="close_button" class="close" ><img src="/icon/close.png" class="closs_img" alt=""></button>
+      </div>
+      <div class="login-wrapper">
+        <div class="centerposition">
+          <h1>create keep</h1>
+        </div>
+        <div>
+
+          <label>collection</label><br>
+          <div class="leftposition">
+            <select  id='collection_name' name="collection-name"></select>
+          </div>
+          <label>url</label><br>
+          <input  id="keep-user-url"  type="text" name="url" value="url"/><br>
+          
+          <label>keeper's title</label><br>
+          <input  id="keep-user-title" type="text" name="title" value="" /><br>
+          <label>keeper's note</label><br>
+          <input  id="keep-user-note" class="note" type="text" name="note" value="" /><br>
+          
+          <label>tags</label><br>
+          <input id="keep-user-tag" class="error" type="text" name="tag" value=""   /><br>
+        
+        </div>
+        <label id= "tagInfo" class="tag_error" value=""></label><br>
+        <div class ="centerposition">
+          <button id = "mark-button" class="mark-button" >create</button>
+        </div>
+        <div class = "sign-out-full" ><b id="sign_out" class ="sign-out" style="cursor:pointer">sign out</b> <a id="sign_out_e" style="cursor:default">(user@email.com)</a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="../js/libs/jquery-3.5.1.min.js"></script>
+  <script src="../js/libs/axios.min.js"></script>
+  <script src="../js/background.js"></script>
+  <script src="../js/popup.js"></script>
+</html> 

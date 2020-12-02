@@ -1,0 +1,208 @@
+body {
+  width: 480px;
+  height: 550px;
+}
+
+h1 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  color: #000000;
+  font-size: 25px;
+  margin:0;
+  font-weight: bold !important;
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 14px;
+}
+
+h3 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-style: normal;
+  color:#000000;
+  font-size: 9px;
+  width: wrap;
+  font-weight: normal;
+  margin:0;
+  margin-top: 7px;
+  margin-bottom: 2px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+label {
+  float: left;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.category{
+ text-align: left;
+
+}
+
+span {
+  font-size: 10px;
+}
+
+i{
+  font-style: normal;
+}
+
+
+a{
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: wrap;
+  text-decoration: none;
+  bottom: 0px;
+}
+
+
+.centerposition{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+
+.leftposition{
+  position: relative;
+  align-items: left;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+select{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  display: flex;
+  box-sizing: border-box;
+  width: 280px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 15px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  appearance: none;
+  -moz-appearance:none; /* Firefox */ 
+  -webkit-appearance:none; /* Safari and Chrome */ 
+  background: url('/icon/more jicon.svg') no-repeat 95% 50% ;
+  cursor: pointer;
+}
+
+
+
+
+.tag_error{
+  margin: 0;
+  font-size: 10px;
+  color: #ff573a;
+}
+
+
+input {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-style: normal;
+  width: 400px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  color: #828282;
+  padding-left: 15px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  align-items: center;
+  vertical-align: center;
+}
+
+.error{
+  margin: 0;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  width: 418px;
+  height: 35px;
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin:0px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  background: #000000;
+  cursor: pointer;
+}
+
+button:disabled 
+{ 
+  background: #b4b4b4; 
+  border: 0; 
+}
+
+.keepit_wrapper{
+
+  width: 100%;
+  height: 100%;
+
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin:0;
+  border: 0; 
+  padding: 0;
+  right:10px;
+  top:10px;
+  background: transparent
+}
+
+.closs_img{
+ 
+  width: 100%;
+  height:100%;
+}
+
+.note{
+  height: 100px;
+}
+
+
+.login-wrapper {
+  position:absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign-out-full{
+  position: relative;
+  align-items: right;
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.sign-out{
+  text-decoration: underline;
+
+  font-size: 15px;
+}
