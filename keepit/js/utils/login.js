@@ -8,14 +8,29 @@
 const API_LOGIN_URL= API_BASE_URL + '/api/auth/login'  //Login API 요청 URL
 
 
+
 $(function(){
 
-  $('#close_button_l').click(function(){
+  $("#close_button_l").click(function(){
     self.close();
   });
 
 });
 
+
+$(document).on('keypress', function(e){
+  if(e.keyCode == '13'){
+    $('#signin').click();
+  }
+});
+
+
+  
+$(document).on('keypress', function(e){
+  if(e.keyCode == '27'){
+    $('#close_button_l').click();
+  }
+});
 
 
 

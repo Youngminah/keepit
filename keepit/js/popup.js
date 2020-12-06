@@ -31,6 +31,13 @@ $(function(){
 });
 
 
+$(document).on('keypress', function(e){
+  if(e.keyCode == '27'){
+    $('#close_button').click();
+  }
+});
+
+
 $(function(){
 
   $("#sign_out").click(function(){
@@ -39,6 +46,14 @@ $(function(){
   });
 
 });
+
+
+$(document).on('keypress', function(e){
+  if(e.keyCode == '13'){
+    $('#mark-button').click();
+  }
+});
+
 
 
 

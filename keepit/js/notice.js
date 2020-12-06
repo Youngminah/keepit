@@ -18,6 +18,22 @@ $(function(){
 });
 
 
+$(document).on('keypress', function(e){
+    if(e.keyCode == '13'){
+      $('#open-keepit').click();
+    }
+});
+  
+
+
+$(document).on('keypress', function(e){
+    if(e.keyCode == '27'){
+      $('#close_button_created').click();
+    }
+});
+  
+
+
 $(function(){
     $("#open-keepit").click(function(){
 
