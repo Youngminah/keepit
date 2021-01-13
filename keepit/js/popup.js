@@ -110,7 +110,7 @@ function getCollection(API_GET_URL){
   axios.get( API_GET_URL,{  //API GET 호출하여 Collection Data 가져오기
     })
     .then(function(response){   // response에는 HEADER , STATUS, DATA가 포함되어있다. 필요한 것은 DATA
-        console.log(response);
+        console.log(response.data.results);
         var collection_list= JSON.parse(JSON.stringify(response.data.results)); //Collection DATA 저장할 List 생성
         changeCollectionSelectbox(collection_list); // Seclection Box에 추가할 함수 실행
 
@@ -129,6 +129,16 @@ function getCollection(API_GET_URL){
 
 
 
+function getTextLength(str) {
+  var len = 0;
+  for (var i = 0; i < str.length; i++) {
+      if (escape(str.charAt(i)).length > 4) {
+          len++;
+      }
+      len++;
+  }
+  return len;
+}
 
 
 /*
@@ -142,7 +152,11 @@ function changeCollectionSelectbox(state){
 
       // Selection box에 추가할 객체 생성
       var collection_title = document.createElement("option");
-      collection_title.text=state[i].title;    
+      if (getTextLength(state[i].title)>=15){
+        collection_title.text=state[i].title.substring(0,15)+"...";  
+      }else{
+        collection_title.text=state[i].title;  
+      }  
       collection_title.value=state[i].uuid; //Collection의 UUID도 저장해준다 (POST요청시 필요)
 
       // Selection box에 객체 추가
